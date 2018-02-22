@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E716D2C2C5CDE2E599BA1F8 /* Pods_VocabTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431152733343A41C450EAEA0 /* Pods_VocabTests.framework */; };
+		6CB0A81BB7171581D68AF8EE /* Pods_VocabUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF03913691C51844E0D27A02 /* Pods_VocabUITests.framework */; };
+		73F13A17483C2B2C8DE0021D /* Pods_Vocab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4FBB393ED673F4614A3D41 /* Pods_Vocab.framework */; };
+		C6257E9D203BF86F00D6980B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6257E9C203BF86F00D6980B /* AppDelegate.swift */; };
+		C6257E9F203BF86F00D6980B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6257E9E203BF86F00D6980B /* ViewController.swift */; };
+		C6257EA2203BF86F00D6980B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6257EA0203BF86F00D6980B /* Main.storyboard */; };
+		C6257EA4203BF86F00D6980B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6257EA3203BF86F00D6980B /* Assets.xcassets */; };
+		C6257EA7203BF86F00D6980B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6257EA5203BF86F00D6980B /* LaunchScreen.storyboard */; };
+		C6257EB2203BF87000D6980B /* VocabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6257EB1203BF87000D6980B /* VocabTests.swift */; };
+		C6257EBD203BF87000D6980B /* VocabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6257EBC203BF87000D6980B /* VocabUITests.swift */; };
+		C6257ECB203BF92A00D6980B /* German.csv in Resources */ = {isa = PBXBuildFile; fileRef = C6257ECA203BF92A00D6980B /* German.csv */; };
+		C6257ECF203BFF5B00D6980B /* CSVFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6257ECE203BFF5B00D6980B /* CSVFileManager.swift */; };
+		C6257ED4203C251000D6980B /* RealmDatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6257ED3203C251000D6980B /* RealmDatabaseModel.swift */; };
+		C6257ED6203C40F000D6980B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6257ED5203C40F000D6980B /* Constants.swift */; };
+		C6257ED8203D76CF00D6980B /* VocabDirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6257ED7203D76CF00D6980B /* VocabDirectoryManager.swift */; };
+		C6257EDA203D995400D6980B /* LanguageLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6257ED9203D995400D6980B /* LanguageLesson.swift */; };
+		C6257EDE203E9D4C00D6980B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6257EDD203E9D4C00D6980B /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6257EAE203BF87000D6980B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6257E91203BF86F00D6980B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6257E98203BF86F00D6980B;
+			remoteInfo = Vocab;
+		};
+		C6257EB9203BF87000D6980B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6257E91203BF86F00D6980B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6257E98203BF86F00D6980B;
+			remoteInfo = Vocab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		431152733343A41C450EAEA0 /* Pods_VocabTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VocabTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA3BB131383684687ADB976 /* Pods-VocabTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VocabTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VocabTests/Pods-VocabTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CCF3969CC4A03AF94BBD32F /* Pods-VocabUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VocabUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VocabUITests/Pods-VocabUITests.release.xcconfig"; sourceTree = "<group>"; };
+		507C3CD988C5F99CFDFA8CE1 /* Pods-VocabUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VocabUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VocabUITests/Pods-VocabUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B4FBB393ED673F4614A3D41 /* Pods_Vocab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vocab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71C3667994BF130DF64EBF16 /* Pods-Vocab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocab.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vocab/Pods-Vocab.release.xcconfig"; sourceTree = "<group>"; };
+		7675240A6D76563A7BB28B14 /* Pods-Vocab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vocab/Pods-Vocab.debug.xcconfig"; sourceTree = "<group>"; };
+		C6257E99203BF86F00D6980B /* Vocab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6257E9C203BF86F00D6980B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6257E9E203BF86F00D6980B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6257EA1203BF86F00D6980B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6257EA3203BF86F00D6980B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6257EA6203BF86F00D6980B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6257EA8203BF86F00D6980B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6257EAD203BF87000D6980B /* VocabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6257EB1203BF87000D6980B /* VocabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabTests.swift; sourceTree = "<group>"; };
+		C6257EB3203BF87000D6980B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6257EB8203BF87000D6980B /* VocabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6257EBC203BF87000D6980B /* VocabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabUITests.swift; sourceTree = "<group>"; };
+		C6257EBE203BF87000D6980B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6257ECA203BF92A00D6980B /* German.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = German.csv; sourceTree = "<group>"; };
+		C6257ECE203BFF5B00D6980B /* CSVFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVFileManager.swift; sourceTree = "<group>"; };
+		C6257ED0203C22B000D6980B /* Vocab-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vocab-Bridging-Header.h"; sourceTree = "<group>"; };
+		C6257ED3203C251000D6980B /* RealmDatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabaseModel.swift; sourceTree = "<group>"; };
+		C6257ED5203C40F000D6980B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C6257ED7203D76CF00D6980B /* VocabDirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabDirectoryManager.swift; sourceTree = "<group>"; };
+		C6257ED9203D995400D6980B /* LanguageLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLesson.swift; sourceTree = "<group>"; };
+		C6257EDD203E9D4C00D6980B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E04219DD0CAECE122BA0AEC0 /* Pods-VocabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VocabTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VocabTests/Pods-VocabTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF03913691C51844E0D27A02 /* Pods_VocabUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VocabUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6257E96203BF86F00D6980B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F13A17483C2B2C8DE0021D /* Pods_Vocab.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6257EAA203BF87000D6980B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E716D2C2C5CDE2E599BA1F8 /* Pods_VocabTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6257EB5203BF87000D6980B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB0A81BB7171581D68AF8EE /* Pods_VocabUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07DF3A6A41714ACE07FA7065 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7675240A6D76563A7BB28B14 /* Pods-Vocab.debug.xcconfig */,
+				71C3667994BF130DF64EBF16 /* Pods-Vocab.release.xcconfig */,
+				4BA3BB131383684687ADB976 /* Pods-VocabTests.debug.xcconfig */,
+				E04219DD0CAECE122BA0AEC0 /* Pods-VocabTests.release.xcconfig */,
+				507C3CD988C5F99CFDFA8CE1 /* Pods-VocabUITests.debug.xcconfig */,
+				4CCF3969CC4A03AF94BBD32F /* Pods-VocabUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4FB67524B24EEF0E02824B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B4FBB393ED673F4614A3D41 /* Pods_Vocab.framework */,
+				431152733343A41C450EAEA0 /* Pods_VocabTests.framework */,
+				FF03913691C51844E0D27A02 /* Pods_VocabUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6257E90203BF86F00D6980B = {
+			isa = PBXGroup;
+			children = (
+				C6257E9B203BF86F00D6980B /* Vocab */,
+				C6257EB0203BF87000D6980B /* VocabTests */,
+				C6257EBB203BF87000D6980B /* VocabUITests */,
+				C6257E9A203BF86F00D6980B /* Products */,
+				07DF3A6A41714ACE07FA7065 /* Pods */,
+				B4FB67524B24EEF0E02824B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6257E9A203BF86F00D6980B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6257E99203BF86F00D6980B /* Vocab.app */,
+				C6257EAD203BF87000D6980B /* VocabTests.xctest */,
+				C6257EB8203BF87000D6980B /* VocabUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6257E9B203BF86F00D6980B /* Vocab */ = {
+			isa = PBXGroup;
+			children = (
+				C6257EDF203E9D5300D6980B /* Util */,
+				C6257ECC203BF93300D6980B /* App Delegate */,
+				C6257ECD203BF93A00D6980B /* View Controller */,
+				C6257EDB203E78F800D6980B /* Manager Classes */,
+				C6257EDC203E790200D6980B /* Storyboard */,
+				C6257EA3203BF86F00D6980B /* Assets.xcassets */,
+				C6257EA5203BF86F00D6980B /* LaunchScreen.storyboard */,
+				C6257EA8203BF86F00D6980B /* Info.plist */,
+				C6257ECA203BF92A00D6980B /* German.csv */,
+				C6257ED0203C22B000D6980B /* Vocab-Bridging-Header.h */,
+			);
+			path = Vocab;
+			sourceTree = "<group>";
+		};
+		C6257EB0203BF87000D6980B /* VocabTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6257EB1203BF87000D6980B /* VocabTests.swift */,
+				C6257EB3203BF87000D6980B /* Info.plist */,
+			);
+			path = VocabTests;
+			sourceTree = "<group>";
+		};
+		C6257EBB203BF87000D6980B /* VocabUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C6257EBC203BF87000D6980B /* VocabUITests.swift */,
+				C6257EBE203BF87000D6980B /* Info.plist */,
+			);
+			path = VocabUITests;
+			sourceTree = "<group>";
+		};
+		C6257ECC203BF93300D6980B /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C6257E9C203BF86F00D6980B /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		C6257ECD203BF93A00D6980B /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6257E9E203BF86F00D6980B /* ViewController.swift */,
+				C6257ED9203D995400D6980B /* LanguageLesson.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		C6257EDB203E78F800D6980B /* Manager Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C6257ECE203BFF5B00D6980B /* CSVFileManager.swift */,
+				C6257ED3203C251000D6980B /* RealmDatabaseModel.swift */,
+				C6257ED7203D76CF00D6980B /* VocabDirectoryManager.swift */,
+			);
+			path = "Manager Classes";
+			sourceTree = "<group>";
+		};
+		C6257EDC203E790200D6980B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C6257EA0203BF86F00D6980B /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		C6257EDF203E9D5300D6980B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C6257EDD203E9D4C00D6980B /* Extensions.swift */,
+				C6257ED5203C40F000D6980B /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6257E98203BF86F00D6980B /* Vocab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6257EC1203BF87000D6980B /* Build configuration list for PBXNativeTarget "Vocab" */;
+			buildPhases = (
+				706FDA1D6DBD41BF12308E9A /* [CP] Check Pods Manifest.lock */,
+				C6257E95203BF86F00D6980B /* Sources */,
+				C6257E96203BF86F00D6980B /* Frameworks */,
+				C6257E97203BF86F00D6980B /* Resources */,
+				DB754EFBDD7F14627BAE20D6 /* [CP] Embed Pods Frameworks */,
+				FB41158321153995DF19E1B4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vocab;
+			productName = Vocab;
+			productReference = C6257E99203BF86F00D6980B /* Vocab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6257EAC203BF87000D6980B /* VocabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6257EC4203BF87000D6980B /* Build configuration list for PBXNativeTarget "VocabTests" */;
+			buildPhases = (
+				5B7BFFB2E2E5140812EFC333 /* [CP] Check Pods Manifest.lock */,
+				C6257EA9203BF87000D6980B /* Sources */,
+				C6257EAA203BF87000D6980B /* Frameworks */,
+				C6257EAB203BF87000D6980B /* Resources */,
+				FDA9FF3546ABD583CBE41B11 /* [CP] Embed Pods Frameworks */,
+				BF56C09199689A0233B96E86 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6257EAF203BF87000D6980B /* PBXTargetDependency */,
+			);
+			name = VocabTests;
+			productName = VocabTests;
+			productReference = C6257EAD203BF87000D6980B /* VocabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C6257EB7203BF87000D6980B /* VocabUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6257EC7203BF87000D6980B /* Build configuration list for PBXNativeTarget "VocabUITests" */;
+			buildPhases = (
+				B8D61C8CCCEA96DE7B1D31AE /* [CP] Check Pods Manifest.lock */,
+				C6257EB4203BF87000D6980B /* Sources */,
+				C6257EB5203BF87000D6980B /* Frameworks */,
+				C6257EB6203BF87000D6980B /* Resources */,
+				FA5741F6D365D2B67226449E /* [CP] Embed Pods Frameworks */,
+				A79A229476EE10B59A44CAB6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6257EBA203BF87000D6980B /* PBXTargetDependency */,
+			);
+			name = VocabUITests;
+			productName = VocabUITests;
+			productReference = C6257EB8203BF87000D6980B /* VocabUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6257E91203BF86F00D6980B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Prateek Kansara";
+				TargetAttributes = {
+					C6257E98203BF86F00D6980B = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					C6257EAC203BF87000D6980B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C6257E98203BF86F00D6980B;
+					};
+					C6257EB7203BF87000D6980B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C6257E98203BF86F00D6980B;
+					};
+				};
+			};
+			buildConfigurationList = C6257E94203BF86F00D6980B /* Build configuration list for PBXProject "Vocab" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6257E90203BF86F00D6980B;
+			productRefGroup = C6257E9A203BF86F00D6980B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6257E98203BF86F00D6980B /* Vocab */,
+				C6257EAC203BF87000D6980B /* VocabTests */,
+				C6257EB7203BF87000D6980B /* VocabUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6257E97203BF86F00D6980B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6257EA7203BF86F00D6980B /* LaunchScreen.storyboard in Resources */,
+				C6257EA4203BF86F00D6980B /* Assets.xcassets in Resources */,
+				C6257ECB203BF92A00D6980B /* German.csv in Resources */,
+				C6257EA2203BF86F00D6980B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6257EAB203BF87000D6980B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6257EB6203BF87000D6980B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B7BFFB2E2E5140812EFC333 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VocabTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		706FDA1D6DBD41BF12308E9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vocab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A79A229476EE10B59A44CAB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VocabUITests/Pods-VocabUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8D61C8CCCEA96DE7B1D31AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VocabUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF56C09199689A0233B96E86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VocabTests/Pods-VocabTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB754EFBDD7F14627BAE20D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Vocab/Pods-Vocab-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vocab/Pods-Vocab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA5741F6D365D2B67226449E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VocabUITests/Pods-VocabUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB41158321153995DF19E1B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vocab/Pods-Vocab-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDA9FF3546ABD583CBE41B11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VocabTests/Pods-VocabTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6257E95203BF86F00D6980B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6257ED6203C40F000D6980B /* Constants.swift in Sources */,
+				C6257ED8203D76CF00D6980B /* VocabDirectoryManager.swift in Sources */,
+				C6257E9F203BF86F00D6980B /* ViewController.swift in Sources */,
+				C6257EDE203E9D4C00D6980B /* Extensions.swift in Sources */,
+				C6257ECF203BFF5B00D6980B /* CSVFileManager.swift in Sources */,
+				C6257EDA203D995400D6980B /* LanguageLesson.swift in Sources */,
+				C6257ED4203C251000D6980B /* RealmDatabaseModel.swift in Sources */,
+				C6257E9D203BF86F00D6980B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6257EA9203BF87000D6980B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6257EB2203BF87000D6980B /* VocabTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6257EB4203BF87000D6980B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6257EBD203BF87000D6980B /* VocabUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6257EAF203BF87000D6980B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6257E98203BF86F00D6980B /* Vocab */;
+			targetProxy = C6257EAE203BF87000D6980B /* PBXContainerItemProxy */;
+		};
+		C6257EBA203BF87000D6980B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6257E98203BF86F00D6980B /* Vocab */;
+			targetProxy = C6257EB9203BF87000D6980B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6257EA0203BF86F00D6980B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6257EA1203BF86F00D6980B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6257EA5203BF86F00D6980B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6257EA6203BF86F00D6980B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6257EBF203BF87000D6980B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6257EC0203BF87000D6980B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6257EC2203BF87000D6980B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7675240A6D76563A7BB28B14 /* Pods-Vocab.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Vocab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prateek.com.Vocab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vocab/Vocab-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6257EC3203BF87000D6980B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71C3667994BF130DF64EBF16 /* Pods-Vocab.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Vocab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prateek.com.Vocab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vocab/Vocab-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C6257EC5203BF87000D6980B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BA3BB131383684687ADB976 /* Pods-VocabTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VocabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prateek.com.VocabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vocab.app/Vocab";
+			};
+			name = Debug;
+		};
+		C6257EC6203BF87000D6980B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04219DD0CAECE122BA0AEC0 /* Pods-VocabTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VocabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prateek.com.VocabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vocab.app/Vocab";
+			};
+			name = Release;
+		};
+		C6257EC8203BF87000D6980B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 507C3CD988C5F99CFDFA8CE1 /* Pods-VocabUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VocabUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prateek.com.VocabUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vocab;
+			};
+			name = Debug;
+		};
+		C6257EC9203BF87000D6980B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CCF3969CC4A03AF94BBD32F /* Pods-VocabUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VocabUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prateek.com.VocabUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vocab;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6257E94203BF86F00D6980B /* Build configuration list for PBXProject "Vocab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6257EBF203BF87000D6980B /* Debug */,
+				C6257EC0203BF87000D6980B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6257EC1203BF87000D6980B /* Build configuration list for PBXNativeTarget "Vocab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6257EC2203BF87000D6980B /* Debug */,
+				C6257EC3203BF87000D6980B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6257EC4203BF87000D6980B /* Build configuration list for PBXNativeTarget "VocabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6257EC5203BF87000D6980B /* Debug */,
+				C6257EC6203BF87000D6980B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6257EC7203BF87000D6980B /* Build configuration list for PBXNativeTarget "VocabUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6257EC8203BF87000D6980B /* Debug */,
+				C6257EC9203BF87000D6980B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6257E91203BF86F00D6980B /* Project object */;
+}

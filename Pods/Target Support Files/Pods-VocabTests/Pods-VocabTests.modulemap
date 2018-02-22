@@ -1,0 +1,6 @@
+framework module Pods_VocabTests {
+  umbrella header "Pods-VocabTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
